@@ -9,7 +9,14 @@ const Education = () => {
         <div className="education-item">
           <h3>Software Engineering Bootcamp</h3>
           <p className="education-description">
-            <strong>General Assembly</strong>
+            <a
+              href="https://generalassemb.ly"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="school-link"
+            >
+              General Assembly
+            </a>
             <br />
             2025
           </p>
@@ -17,20 +24,33 @@ const Education = () => {
 
         <div className="education-item">
           <h3>Bachelor of Technology in Mechanical Engineering</h3>
-
           <p className="education-description">
-            <strong>National University of Singapore</strong>
+            <a
+              href="https://nus.edu.sg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="school-link"
+            >
+              National University of Singapore
+            </a>
             <br />
-            2018 - 2022
+            2018 – 2022
           </p>
         </div>
+
         <div className="education-item">
           <h3>Diploma in Engineering (Mechanical Technology)</h3>
-
           <p className="education-description">
-            <strong>Singapore Polytechnic</strong>
+            <a
+              href="https://www.sp.edu.sg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="school-link"
+            >
+              Singapore Polytechnic
+            </a>
             <br />
-            2013 - 2016
+            2013 – 2016
           </p>
         </div>
       </div>

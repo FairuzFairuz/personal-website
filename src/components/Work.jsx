@@ -97,7 +97,7 @@ const Work = () => {
           <p className="work-description">
             <ul>
               <li>
-                Coordinated with lab compounderss to process raw material
+                Coordinated with lab compounders to process raw material
                 requirements, resulting in improved efficiency for various labs.
               </li>
               <li>

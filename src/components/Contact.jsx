@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,11 +9,14 @@ const Contact = () => {
       <h2 className="section-title">Let's Connect</h2>
       <div className="contact-info">
         <p>
-          <strong>Email:</strong> ahmadfairuz2312@gmail.com
+          <MdEmail className="contact-icon" />
+          <a href="mailto:ahmadfairuz2312@gmail.com">
+            ahmadfairuz2312@gmail.com
+          </a>
         </p>
 
         <p>
-          <strong>LinkedIn:</strong>{" "}
+          <FaLinkedin className="contact-icon" />
           <a
             href="https://www.linkedin.com/in/ahmadfairuzomar"
             target="_blank"
@@ -20,8 +25,9 @@ const Contact = () => {
             linkedin.com/in/ahmadfairuzomar
           </a>
         </p>
+
         <p>
-          <strong>GitHub:</strong>{" "}
+          <FaGithub className="contact-icon" />
           <a
             href="https://github.com/FairuzFairuz"
             target="_blank"

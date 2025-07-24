@@ -1,5 +1,17 @@
 import React from "react";
-import "./styles.css"; // Optional: separate styling
+import "./styles.css";
+import {
+  SiJavascript,
+  SiReact,
+  SiVite,
+  SiCss3,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiJsonwebtokens,
+  SiBootstrap,
+  SiHtml5,
+} from "react-icons/si";
 
 const Projects = () => {
   return (
@@ -8,7 +20,13 @@ const Projects = () => {
       <div className="projects-grid">
         <div className="project-card">
           <h3>Portfolio Website</h3>
-          <p className="project-tech">JavaScript . React . Vite . CSS</p>
+          <div className="project-tech-icons">
+            <SiJavascript />
+            <SiReact />
+            <SiVite />
+            <SiCss3 />
+          </div>
+
           <p className="project-description">
             A personal portfolio showcasing my transition from engineering to
             tech. Built with React and styled for clarity and responsiveness.
@@ -25,10 +43,16 @@ const Projects = () => {
 
         <div className="project-card">
           <h3>FootyVote</h3>
-          <p className="project-tech">
-            JavaScript . React . Node . Express . PostgreSQL . JWT
-            Authentication . Bootstrap
-          </p>
+          <div className="project-tech-icons">
+            <SiJavascript />
+            <SiReact />
+            <SiNodedotjs />
+            <SiExpress />
+            <SiPostgresql />
+            <SiJsonwebtokens />
+            <SiBootstrap />
+          </div>
+
           <p className="project-description">
             A PERN full-stack application designed for football enthusiasts to
             engage in debates, vote on key football topics and interact with
@@ -46,7 +70,12 @@ const Projects = () => {
 
         <div className="project-card">
           <h3>Just Math It</h3>
-          <p className="project-tech">JavaScript . HTML . CSS</p>
+          <div className="project-tech-icons">
+            <SiJavascript />
+            <SiHtml5 />
+            <SiCss3 />
+          </div>
+
           <p className="project-description">
             A game to instil the interest of maths and basic computer skills in
             young children by incorporating simple maths equations with the
