@@ -18,6 +18,7 @@ body {
 .App {
   width: 100%;
   height: 100%;
+  padding-top: 60px; /* Match navbar height */
 }
 header.home-section {
   width: 100%;
@@ -30,6 +31,7 @@ header.home-section {
   min-height: calc(100vh - 60px);
   background-color: var(--bg-color);
   padding: 2rem;
+  padding-top: 60px; /* Match navbar height */
 }
 section {
   background-color: var(--bg-color);
@@ -96,4 +98,9 @@ body {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 240px; /* Match mobile navbar height */
+  }
 }
