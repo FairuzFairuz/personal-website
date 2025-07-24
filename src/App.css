@@ -1,6 +1,20 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --bg-color: #1c1c1e;
+  --surface-color: #2a2a2d;
+  --accent-color: #00bfff;
+  --text-color: #e0e0e0;
+  --muted-color: #999;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1c1c1e, #2a2a2d);
+
+  color: var(--text-color);
+}
 .App {
   width: 100%;
   height: 100%;
@@ -14,18 +28,21 @@ header.home-section {
   justify-content: center;
   width: 100%;
   min-height: calc(100vh - 60px);
-  background-color: #e0f7fa;
+  background-color: var(--bg-color);
   padding: 2rem;
 }
-
+section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-top: 1px solid #333;
+}
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #e0f7fa;
-  font-family: "Segoe UI", sans-serif;
+  font-family: var(--font-family);
 }
 .intro-layout {
   display: flex;
@@ -55,19 +72,29 @@ body {
 
 .intro-text h1 {
   font-size: 2.5rem;
-  color: #007acc;
+  color: var(--accent-color); /* ✅ Use electric blue */
+
   margin-bottom: 0.5rem;
 }
 
 .tagline {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #007acc;
+  color: var(--accent-color); /* ✅ Use electric blue */
+
   margin-bottom: 1rem;
 }
 
 .summary {
   font-size: 1rem;
-  color: #333;
+  color: var(--text-color); /* ✅ Replace #333 */
   line-height: 1.6;
+}
+
+.footer {
+  background-color: var(--surface-color);
+  color: var(--muted-color);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
 }

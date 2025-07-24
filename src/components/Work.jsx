@@ -58,8 +58,8 @@ const Work = () => {
         <div className="work-item">
           <h3>Senior Research Associate</h3>
           <p className="work-meta">
-            Vectura Fertin Pharma Laboratories (Philip Morris International
-            Research Laboratories)
+            Vectura Fertin Pharma Laboratories (previously Philip Morris
+            International Research Laboratories)
             <br />
             Jun 2016 - Dec 2023
           </p>

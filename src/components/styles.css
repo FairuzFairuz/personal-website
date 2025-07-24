@@ -1,7 +1,7 @@
 .work-section {
   padding: 4rem 1rem; /* Less horizontal padding */
-  background-color: #ffffff;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .section-title {
@@ -10,7 +10,9 @@
   text-align: center;
   margin-bottom: 2rem;
 }
-
+section {
+  border-top: 1px solid #333;
+}
 .work-timeline {
   display: flex;
   flex-direction: column;
@@ -21,21 +23,22 @@
 }
 
 .work-item {
-  background-color: #f0f8ff;
   padding: 1.5rem;
-  border-left: 4px solid #007acc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: var(--surface-color);
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .work-item h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #007acc;
+  color: var(--accent-color);
 }
 
 .work-meta {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted-color);
+
   margin-bottom: 0.5rem;
 }
 
@@ -46,13 +49,13 @@
 
 .projects-section {
   padding: 4rem 2rem;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .section-title {
   font-size: 2rem;
-  color: #007acc;
+  color: var(--accent-color);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -66,21 +69,22 @@
 }
 
 .project-card {
-  background-color: #ffffff;
+  background-color: var(--surface-color);
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
   border-radius: 8px;
 }
 
 .project-card h3 {
   margin-top: 0;
-  color: #007acc;
+  color: var(--accent-color);
 }
 
 .project-tech {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted-color);
   margin-bottom: 0.5rem;
 }
 
@@ -91,11 +95,82 @@
 }
 
 .project-link {
-  color: #007acc;
-  font-weight: bold;
+  color: var(--accent-color);
   text-decoration: none;
+  text-shadow: 0 0 5px var(--accent-color);
 }
 
 .project-link:hover {
+  text-decoration: underline;
+}
+
+.education-section {
+  padding: 4rem 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px; /* Same as .work-timeline */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.education-item {
+  padding: 1.5rem;
+  background-color: var(--surface-color);
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.education-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.education-meta {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+
+  margin-bottom: 0.5rem;
+}
+
+.education-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-section {
+  padding: 4rem 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: 0 0 5px var(--accent-color);
+}
+
+.contact-info a:hover {
   text-decoration: underline;
 }
