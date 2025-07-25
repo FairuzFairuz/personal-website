@@ -14,25 +14,27 @@ const Landing = () => {
           <p className="tagline">I traded lab reports for console logs.</p>
           <p className="summary">
             With a background in Mechanical Engineering and nearly a decade in
-            pharmaceutical research, I’ve worked on technical investigations, 3D
-            prototyping, and optimizing lab workflows in highly regulated
-            environments. It’s been a journey shaped by precision, creativity,
-            and more documentation than I care to admit.
+            pharmaceutical research, I’ve tackled technical investigations,
+            built 3D prototypes, and optimized lab workflows in environments
+            where every detail mattered and mistakes weren’t just frowned upon,
+            they came with paperwork. I’ve worked with strict regulations,
+            complex systems, and enough documentation to make a printer cry.
             <br />
             <br />
-            After completing a software engineering bootcamp, I’ve shifted my
-            focus to tech, where I’m interested in building smart, user-friendly
-            tools that make complex ideas feel simple. I’m especially drawn to
-            modern web development, where clean code and thoughtful design come
-            together to create engaging digital experiences.
+            After completing a software engineering bootcamp where I swapped lab
+            gear for keyboard shortcuts and learned coffee pairs surprisingly
+            well with semicolons, I pivoted into tech with a focus on building
+            smart, user-friendly tools that turn complex ideas into clear,
+            intuitive experiences.
             <br />
             <br />
-            Whether I’m untangling a tricky bug or refining a user interface, I
-            enjoy turning ideas into something practical, polished, and
-            genuinely useful.
+            Whether I’m debugging a stubborn issue or putting out fires caused
+            by “just one quick change,” I enjoy building tools that work
+            reliably, even when things get messy.
           </p>
           <p className="tagline">
-            Science gave me structure. Tech gave me freedom.
+            "Science gave me structure. Tech gave me freedom."
+            <br /> ~ Ahmad Fairuz
           </p>
         </div>
 
