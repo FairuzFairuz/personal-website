@@ -28,9 +28,9 @@ const Landing = () => {
             intuitive experiences.
             <br />
             <br />
-            Whether I’m debugging a stubborn issue or putting out fires caused
-            by “just one quick change,” I enjoy building tools that work
-            reliably, even when things get messy.
+            Whether I’m debugging a stubborn issue or untangling the ripple
+            effects of a “quick fix,” I enjoy building tools that stay
+            dependable, even when the code gets complicated.
           </p>
           <p className="tagline">
             "Science gave me structure. Tech gave me freedom."
