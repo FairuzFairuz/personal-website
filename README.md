@@ -25,7 +25,7 @@ This site is built to highlight my skills, projects, and professional growth as 
 
 ## 📬 Contact
 
-Feel free to reach out via the contact section or connect with me on [LinkedIn](https://www.linkedin.com/ahmadfairuzomar) and [GitHub](https://github.com/FairuzFairuz).
+Feel free to reach out via the contact section or connect with me on [LinkedIn](https://www.linkedin.com/in/ahmadfairuzomar) and [GitHub](https://github.com/FairuzFairuz).
 
 ---
 
