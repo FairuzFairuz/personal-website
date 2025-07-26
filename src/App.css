@@ -1,6 +1,8 @@
+/* Global Reset and Variables */
 * {
   box-sizing: border-box;
 }
+
 :root {
   --bg-color: #1c1c1e;
   --surface-color: #2a2a2d;
@@ -10,34 +12,6 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-body {
-  background: linear-gradient(135deg, #1c1c1e, #2a2a2d);
-
-  color: var(--text-color);
-}
-.App {
-  width: 100%;
-  height: 100%;
-  padding-top: 60px; /* Match navbar height */
-}
-header.home-section {
-  width: 100%;
-}
-.home-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: calc(100vh - 60px);
-  background: linear-gradient(135deg, #1c1c1e, #2a2a2d); /* Match body */
-  padding: 2rem;
-  padding-top: 60px; /* Match navbar height */
-}
-section {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border-top: 1px solid #333;
-}
 html,
 body {
   height: 100%;
@@ -45,62 +19,146 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: var(--font-family);
+  background: linear-gradient(135deg, #1c1c1e, #2a2a2d);
+  color: var(--text-color);
 }
+
+/* App Container */
+.App {
+  width: 100%;
+  height: 100%;
+  padding-top: 60px; /* Desktop navbar height */
+}
+
+/* Home Section */
+header.home-section,
+.home-section {
+  width: 100%;
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(135deg, #1c1c1e, #2a2a2d);
+  padding: 2rem;
+  padding-top: 60px;
+}
+
+/* Section Styling */
+section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-top: 1px solid #333;
+}
+
+/* Intro Layout */
 .intro-layout {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
-  gap: 2rem;
+  align-items: stretch;
   width: 100%;
-  max-width: none;
-  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+  gap: 2rem;
+}
+
+.image-wrapper {
+  flex: 0 0 250px;
+  display: flex;
+  align-items: stretch;
+  padding: 4px;
+  background: linear-gradient(135deg, #00bfff, #1c1c1e);
+  border-radius: 8px;
 }
 
 .profile-pic {
-  height: auto;
-  max-height: 100%;
-  width: auto;
-  max-width: 300px; /* Adjust as needed */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border: none;
-  border-radius: 0;
-  align-self: stretch;
+  border-radius: 8px;
 }
+
+/* Intro Text */
 .intro-text {
-  max-width: 600px;
-  margin: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 0.8s ease-out 0.3s forwards;
+  background: rgba(42, 42, 45, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.1);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .intro-text h1 {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
   margin-bottom: 2rem;
   color: whitesmoke;
-  font-weight: bold;
-  position: relative;
-  font-family: "Orbitron", sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent-color);
+  animation: typing 2s steps(20, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 4vw, 1.2rem);
   font-weight: 600;
-  color: var(--accent-color); /* ✅ Use electric blue */
-
+  color: var(--accent-color);
   margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tagline:hover {
+  color: #fff;
+  text-shadow: 0 0 6px var(--accent-color);
 }
 
 .summary {
-  font-size: 1rem;
-  color: var(--text-color); /* ✅ Replace #333 */
+  font-size: clamp(0.9rem, 3.5vw, 1rem);
   line-height: 1.6;
+  color: var(--text-color);
+  padding: 0 0.5rem;
 }
 
+/* Footer */
 .footer {
   background-color: var(--surface-color);
   color: var(--muted-color);
@@ -108,8 +166,35 @@ body {
   padding: 2rem;
   font-size: 0.9rem;
 }
+
+/* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
   .home-section {
-    padding-top: 240px; /* Match mobile navbar height */
+    padding-top: 120px;
+    padding: 1rem;
+  }
+
+  .intro-layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .image-wrapper {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .intro-text {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
   }
 }

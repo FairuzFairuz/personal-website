@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Contact = () => {
   return (
     <section id="contact" className="projects-section">
-      <h2 className="section-title">Let's Connect</h2>
+      <h2 className="section-title">Digital Footprint</h2>
       <div className="projects-grid">
         {/* Email Card */}
         <div className="project-card contact-card">

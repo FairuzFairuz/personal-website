@@ -5,7 +5,7 @@ import { FaBook, FaSchool, FaGraduationCap } from "react-icons/fa";
 const Education = () => {
   return (
     <section id="education" className="projects-section">
-      <h2 className="section-title">My Academic Adventure</h2>
+      <h2 className="section-title">Academic Adventure</h2>
       <div className="projects-grid">
         <div className="project-card">
           <h3>Software Engineering Bootcamp</h3>

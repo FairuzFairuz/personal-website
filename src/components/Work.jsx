@@ -4,7 +4,7 @@ import "./styles.css";
 const Work = () => {
   return (
     <section id="work" className="projects-section">
-      <h2 className="section-title">What I've Been Up To</h2>
+      <h2 className="section-title">Experience Expedition</h2>
       <div className="projects-grid work-vertical">
         <div className="project-card">
           <h3>Aerosol Research Engineer - Associate</h3>

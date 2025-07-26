@@ -16,7 +16,7 @@ import {
 const Projects = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2 className="section-title">Things I've Built......thus far</h2>
+      <h2 className="section-title">Digital Constructs</h2>
       <div className="projects-grid">
         {/* Portfolio Website */}
         <div className="project-card">
